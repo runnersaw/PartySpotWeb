@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdn.firebase.com/js/client/2.2.9/firebase.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<title>PartySpot</title>
+</head>
+<body>
+	<div id="title-div">
+		<form action="javascript:updatePlaylist();">
+  			Playlist: <input type="text" name="playlist"><br>
+  			<input type="submit" value="Submit">
+		</form>
+
+	</div>
+	<div id="suggestions-div">
+		<h1 id="suggestions-title">Current Suggestions</h1>
+		<ul id="suggestions-container"></ul>
+
+	</div>
+	<div id="now-playing-div">
+		<h1 id="now-playing-title">Now playing</h1>
+		<div id="now-playing-artwork">
+			<img id="now-playing-pic">
+		</div>
+		<h2 id="now-playing-song"></h2>
+		<h3 id="now-playing-artist"></h3>
+	</div>
+	<div id="search-div">
+		<h1 id="search-title">Search for suggestions</h1>
+		<button id="clicky">clicky</button>
+		<ul id="search-container"></ul>
+
+
+
+
+	</div>
+	<div id="footer-div">
+
+
+
+
+	</div>
+
+	<div id="dialog" title="Confirmation Required">
+		Want to suggest this song?
+	</div>
+</body>
+</html>
